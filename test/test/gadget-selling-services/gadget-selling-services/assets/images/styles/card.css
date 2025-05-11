@@ -1,0 +1,51 @@
+.card {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  animation: fadeInUp 0.7s ease forwards;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  transform: translateY(-8px) scale(1.03);
+}
+
+.card-header h3 {
+  padding: 14px 16px;
+  margin: 0;
+}
+
+.card-header img {
+  width: 95%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-header img {
+  transform: scale(1.08);
+}
+
+.card-body {
+  padding: 0 16px;
+}
+
+.card-footer {
+  padding: 14px 16px;
+}
+
+/* Animation keyframes for fade in and slide up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
